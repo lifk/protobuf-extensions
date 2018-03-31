@@ -4,7 +4,7 @@ import com.google.protobuf.Any
 import com.google.protobuf.Struct
 import com.google.protobuf.Value
 
-class WellKnownTypesBuilders {
+object WellKnownTypesBuilders {
     inline fun Any(block: Any.Builder.() -> Unit) = Any.newBuilder().apply(block).build()
 
     inline fun Struct(block: Struct.Builder.() -> Unit) = Struct.newBuilder().apply(block).build()
